@@ -1,9 +1,9 @@
-# Sprint Challenge: Single Page Applications
+X # Sprint Challenge: Single Page Applications
 ## Rick & Morty Edition
 
 This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored Single Page Applications, React Router I - II, React Forms, and Hooks.
 
-## Instructions
+X ## Instructions
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
@@ -13,7 +13,7 @@ You are not allowed to collaborate with students during the Sprint Challenge. Ho
 
 You have **three hours to complete** this challenge. **Plan your time accordingly.**
 
-## Commits
+X ## Commits
 
 In case you ever need to return to old code. Remember your **ABC: Always Be Committing!**
 
@@ -25,25 +25,30 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
-- [ ] Explain benefit(s) using `client-side routing`?
+- [X] Explain benefit(s) using `client-side routing`?
+> Answer:   This method uses JavaScripts command of "useState" to pull content from the application that has been built in using React and components. Thus it does not have to wait for the server because the "state" created in JavaScript prevents this.
+- [X] What does AJAX stand for?
 > Answer:
-- [ ] What does AJAX stand for?
+AJAX stands for Asynchronous JavaScript and XML. This newer process uses
+  XML, HTML, CSS, DOM, and Java Script to create more responsive and better web applications. It uses each one for different parts;  XHTML manipulates what content is displayed, CSS manipulates the styling of the page,  Document Object Model and JavaScript for responsiveness.
+- [X] What are `controlled components` in React?
+> Answer: React Components that rely on state and render, therefore allowing them to change instead of staying hardcoded and non interactive. It accomplishes this by re-rendering the state and the value entered into the field. This also allows us to clear the field.
+- [X] Name three tools/libraries for making AJAX requests.
 > Answer:
-- [ ] What are `controlled components` in React?
-> Answer:
-- [ ] Name three tools/libraries for making AJAX requests.
-> Answer:
+Axios(lets you make HTTP requests from browser and server)
+Fetch(Retrieves resources from the server, usable on all modern browsers)
+SuperAgent(readability and flexibility)
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on GitHub.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
-- [ ] Implement the project on this branch, committing changes regularly.
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add TL as collaborator on GitHub.
+- [X] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [X] Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
+- [X] Implement the project on this branch, committing changes regularly.
+- [X] Push commits: `git push origin <firstName-lastName>`.
 - [ ] **LOOK** at your project directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
 - [ ] **RUN** `yarn install` or `npm install` to retrieve the client-side dependencies.
 - [ ] **RUN** `yarn start` or `npm start` to fire up your React application.
