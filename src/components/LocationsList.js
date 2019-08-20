@@ -10,36 +10,25 @@ const LocList = styled.div`
   border: 2px solid yellow;
   justify-content: space-evently;
 `;
+
 export default function LocationsList() {
   const [locationData, setLocationData] = useState([]);
 
   useEffect(() => {
-    const getLocation = () => {
-      axios
-        .get("https://rickandmortyapi.com/api/location/")
-        .then(item => {
-          setLocationData(item.data.results);
-        })
-        .catch(error => {
-          console.log("error", error);
-        });
-    };
-    getLocation();
+    axios
+      .get("https://rickandmortyapi.com/api/location/")
+      .then(response => {
+        setLocationData(response.data.results);
+      })
+      .catch(error => {
+        console.log(error);
+      });
   }, []);
-
-  console.log(locationData);
 
   return (
     <LocList>
-      {locationData.map(item => {
-        return (
-          <LocationCard
-            name={item.name}
-            type={item.type}
-            dimension={item.dimension}
-            residents={item.residents}
-          />
-        );
+      {locationData.map(location => {
+        return <LocationCard locationInfo={location} />;
       })}
     </LocList>
   );
