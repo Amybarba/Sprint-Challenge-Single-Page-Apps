@@ -16,13 +16,13 @@ export default function TabNav() {
 return (
     <div className="tabbox">
       <NavLink exact to="/" className="tabstop">Home</NavLink>
-     <NavLink to="/characters/1" className="tabstop">
+     <NavLink to="/characters/" className="tabstop">
          Characters
        </NavLink>
-       <NavLink to="/locations/1" className="tabstop">
+       <NavLink to="/locations/" className="tabstop">
          Locations
        </NavLink>
-       <NavLink to="/episodes/1" className="tabstop">
+       <NavLink to="/episodes/" className="tabstop">
          Episodes
        </NavLink>
     </div>
